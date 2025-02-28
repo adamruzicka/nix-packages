@@ -16,6 +16,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
+        packages.broker = pkgs.callPackage ./packages/broker.nix { };
       }
     );
 }
