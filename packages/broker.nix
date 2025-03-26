@@ -4,7 +4,7 @@ with pkgs.python311Packages;
 
 let
   pname = "broker";
-  version = "0.6.5";
+  version = "0.6.6";
   format = "wheel";
 
   awxkit =
@@ -49,7 +49,7 @@ buildPythonApplication {
   inherit pname version format;
   src = fetchPypi rec {
     inherit pname version format;
-    sha256 = "sha256-Nurj9swPvnWJ0ncBxT3DsaBRfc0ZZGNsEpWqFZbvK5k=";
+    sha256 = "sha256-VPQu93Gp36IHMXfEQr2OKodrSqZvtmn/l6xUl8Rl7js=";
     dist = python;
     python = "py3";
   };
