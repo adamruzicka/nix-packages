@@ -9,7 +9,8 @@
     };
   };
 
-  outputs = inputs:
+  outputs =
+    inputs:
     inputs.snowfall-lib.mkFlake {
       # You must provide our flake inputs to Snowfall Lib.
       inherit inputs;
